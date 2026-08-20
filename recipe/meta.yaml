@@ -1,14 +1,14 @@
 {% set name = "qt5-advanced-docking-system" if qt == '5' else 'qt6-advanced-docking-system' %}
 {% set libname = "qtadvanceddocking-qt5" if qt == '5' else 'qtadvanceddocking-qt6' %}
-{% set version = "4.4.1" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/archive/{{ version }}.tar.gz
-  sha256: 925717a6ad27cc0d5b74c4aa292479a48f797fcfcb459403cc1ccb63810322ca
+  url: https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/archive/v{{ version }}.tar.gz
+  sha256: a3d5c8f9573e67f0d28612926eae7ec926f0db71ce358c06ec65b55c4f907e24
   patches:
     - 0001-CMakeLists.patch
 
